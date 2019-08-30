@@ -1,9 +1,37 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a470068d22.js"></script>
+    <style>
+      h1 {font-family: 'Raleway', sans-serif;}
+      q {font-style: italic;}
+      /* https://jarv.is/notes/css-waving-hand-emoji/ */
+      span.wave {
+        animation-name: wave-animation;    /* Refers to the name of your @keyframes element below */
+        animation-duration: 2.5s;          /* Change to speed up or slow down */
+        animation-iteration-count: infinite;    /* Never stop waving :) */
+        transform-origin: 70% 70%;         /* Pivot around the bottom-left palm */
+        display: inline-block;
+      }
+
+      @keyframes wave-animation {
+          0% { transform: rotate(  0.0deg) }
+         10% { transform: rotate(-10.0deg) }    /* The following four values can be played with to make the waving more or less extreme */
+         20% { transform: rotate( 12.0deg) }
+         30% { transform: rotate(-10.0deg) }
+         40% { transform: rotate(  9.0deg) }
+         50% { transform: rotate(  0.0deg) }    /* Reset for the last half to pause */
+        100% { transform: rotate(  0.0deg) }
+      }  
+    </style>
+  </head>
 <body>
-<blockquote cite="https://en.wikipedia.org/wiki/%22Hello,_World!%22_program"><p><i>
-A <b>"Hello, World!" program</b> generally is a computer program that outputs or displays the message "Hello, World!". Such a program is very simple in most programming languages, and is often used to illustrate the basic syntax of a programming language. It is often the first program written by people learning to code.
-</i> - <a href="https://en.wikipedia.org/wiki/%22Hello,_World!%22_program" target="_blank">wikipedia</a></p>
-</blockquote>
-</body>
+  <h1>welcome visitor <span class="wave">👋</span></h1>
+  <p>This <b>pages</b> are now empty, in the meantime please visit <a hred="https://www.linkedin.com/in/peter-lisak/"><i class="fab fa-linkedin">linkedin</i></a>.</p>
+  <p>
+  <q cite="https://en.wiktionary.org/wiki/the_shoemaker%27s_children_go_barefoot">the shoemaker's children go barefoot</q> - <a href="https://en.wiktionary.org/wiki/the_shoemaker%27s_children_go_barefoot" target="_blank">wiktionary</a>
+  </p>
+  </body>
 </html>
